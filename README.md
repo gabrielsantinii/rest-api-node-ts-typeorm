@@ -1,14 +1,28 @@
-## Regras
+## Criterias
 
-### Cadastro de usuário
--   [ ] Não permitido cadastrar mais de um usuário com mesmo e-mail.
--   [ ] Não permitido cadastrar usuário sem e-mail.
+### Posting Users
+-   [ ] Email is unique;
+-   [ ] Email is mandatory.
 
-### Cadastro de tags
--   [ ] Não permitido cadastrar mais de uma tag com mesmo nome.
--   [ ] Não permitido cadastrar tag sem nome.
--   [ ] Não permitido cadastrar tag sem ser um administrador.
+### Posting Tags
+-   [ ] Tag name is unique;
+-   [ ] Tag name is mandatory;
+-   [ ] Only administrators can post tags.
 
-### Cadastro de elogios
-- [ ] Não permitido cadastrar elogios para si mesmo.
-- [ ] [ ] Não permitido cadastrar elogios sem autenticação.
+### Posting Compliments
+-   [ ] The sender of compliment can't be the receiver;
+-   [ ] Only auth user can post a compliment.
+
+## -> Features
+#### Register users;
+#### Register tags;
+#### Register compliments;
+#### Relation with users, tags and compliments;
+#### User auth with JWT.
+
+
+## -> Next Features
+#### Swagger Doc
+#### Migration from SQLite to Postgres
+#### Sendmail service
+#### React App like an social network, with users profile, received compliments, sent compliments...
